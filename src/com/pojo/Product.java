@@ -3,11 +3,12 @@ package com.pojo;
 import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Component;
+@Component("p")
 public class Product {
 
 	private int id;
-	private String name;
+	private String name = "product1";
 	//@Autowired
 	@Resource(name="c")
 	private Category category;
@@ -22,7 +23,7 @@ public class Product {
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
+	}	
 	public Category getCategory() {
 		System.out.println("get category method");
 		return category;
