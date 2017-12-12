@@ -21,6 +21,6 @@ public class TestSpring {
          new String[] { "applicationContext.xml" });
         ProductService s = (ProductService) context.getBean("s");
         s.doService();
-	}
+	}	
 
 }
