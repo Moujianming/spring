@@ -14,6 +14,7 @@ public class TestSpring {
 		/*Category c = (Category)context.getBean("c");
 		System.out.println(c.getName());*/
 		Product p = (Product)context.getBean("p");
+		System.out.println(p.getName());
 		System.out.println(p.getCategory().getName());
 	}
 

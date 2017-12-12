@@ -14,15 +14,14 @@
    http://www.springframework.org/schema/context      
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
   
-    <!-- <bean name="c" class="com.how2java.pojo.Category">
-        <property name="name" value="category 1" />
-    </bean> -->
+    
+    <context:annotation-config></context:annotation-config><!-- 注解方式开发 -->
   <bean name="c" class="com.pojo.Category">
   <property name="name" value="category 1"></property>
   </bean>
   <bean name="p" class="com.pojo.Product">
   <property name="name" value="product1"></property>
-  <property name="category" ref="c"></property>
+ <!--  <property name="category" ref="c"></property> -->
   
   </bean>
 </beans>
